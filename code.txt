@@ -1,0 +1,97 @@
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+#include <limits.h> 
+
+int main() 
+{
+int ans,n,p,q,r,s,t,u,v,w,x,y;
+
+printf("Goodies and prices: \n");
+
+printf("Fitbit Plus: ");//for this goodie I have taken p as variable
+
+scanf("%d",&p);
+
+printf("\n");
+
+printf("Ipods: ");//for this goodie I have taken q as variable
+
+scanf("%d",&q);
+
+printf("\n");
+
+printf("MI Band: ");//for this goodie I have taken r as variable
+
+scanf("%d",&r);
+
+printf("\n");
+
+printf("Cult Pass: ");//for this goodie I have taken s as variable
+
+scanf("%d",&s);
+
+printf("\n");
+
+printf("Mackbook Pro: ");//for this goodie I have taken t as variable
+
+scanf("%d",&t);
+
+printf("\n");
+
+printf("Digital Camera: ");//for this goodie I have taken u as variable
+
+scanf("%d",&u);
+
+printf("\n");
+
+printf("Alexa: ");//for this goodie I have taken v as variable
+
+scanf("%d",&v);
+
+printf("\n");
+
+printf("Sandwich Toaster: ");//for this goodie I have taken w as variable
+
+scanf("%d",&w);
+
+printf("\n");
+
+printf("Microwave oven: ");//for this goodie I have taken x as variable
+
+scanf("%d",&x);
+printf("\n");
+
+printf("Scale: ");//for this goodie I have taken y as variable
+
+scanf("%d",&y);
+
+
+    
+
+void func(int arr[], int M, int N)
+ {
+ //sorting it
+ sort(arr, arr+N);
+
+ int ans = INT_MAX;
+ 
+for(int i = M; i < N; i++) 
+{
+ 
+ ans = min(ans, arr[i]-arr[i-M]);//taking difference of goodies
+ 
+}
+    
+ 
+return ans;
+
+}
+ 
+ printf("The difference between the choosen goodie with higest price and the lowerst price is %d:", ans);
+
+
+    return 0;
+
+}
